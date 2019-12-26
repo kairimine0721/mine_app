@@ -1,0 +1,9 @@
+namespace mineapp {
+  class CdTeStripCameraMainGeometry;
+  class CdTeStripCameraMainGeometryRealWorld;
+  class GeometryCdTeStripCamera;
+  class GeometryCollimator;
+  class GeometryCollimatorTORAY1;
+  class GeometryCollimatorMINE1;
+  class NucleusPrimaryGen_2d_phantom;
+}
