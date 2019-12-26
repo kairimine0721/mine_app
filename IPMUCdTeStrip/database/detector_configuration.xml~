@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/Users/takeda/soft/ComptonSoft/xmlstyle/detector_config_v3.xsl" ?>
+
+<configuration>
+  <name>CdTeStrip</name>
+  <comment>S. Takeda | 2016-4-21</comment>
+  <length_unit>mm</length_unit>
+  <detectors>
+    <detector id="100">
+      <type>2DStrip</type>
+      <name>CdTeStrip:0</name>
+      <geometry>
+        <widthx>34.0</widthx><widthy>34.0</widthy><thickness>0.75</thickness>
+        <offsetx>1.0</offsetx><offsety>1.0</offsety>
+      </geometry>
+      <pixel>
+        <numx>128</numx><numy>128</numy>
+        <pitchx>0.25</pitchx><pitchy>0.25</pitchy>
+      </pixel>
+      <position><x>0.0</x><y>0.0</y><z>0.0</z></position>
+      <direction_xaxis><x>+1.0</x><y>0.0</y><z>0.0</z></direction_xaxis>
+      <direction_yaxis><x>0.0</x><y>+1.0</y><z>0.0</z></direction_yaxis>
+      <energy_priority>anode</energy_priority>
+      <readout>
+        <section num_channels="32" electrode_side="cathode"/>
+	<section num_channels="32" electrode_side="cathode"/>
+	<section num_channels="32" electrode_side="cathode"/>
+	<section num_channels="32" electrode_side="cathode"/>
+	<section num_channels="32" electrode_side="anode"/>
+	<section num_channels="32" electrode_side="anode"/>
+	<section num_channels="32" electrode_side="anode"/>
+	<section num_channels="32" electrode_side="anode"/>
+      </readout>
+    </detector>
+
+  </detectors>
+  
+  <readout>
+    <module id="0">
+      <section>
+	<detector id="100" section="0"/>
+      </section>
+      <section>
+	<detector id="100" section="1"/>
+      </section>
+      <section>
+	<detector id="100" section="2"/>
+      </section>
+      <section>
+	<detector id="100" section="3"/>
+      </section>
+      <section>
+	<detector id="100" section="4"/>
+      </section>
+      <section>
+	<detector id="100" section="5"/>
+      </section>
+      <section>
+	<detector id="100" section="6"/>
+      </section>
+      <section>
+	<detector id="100" section="7"/>
+      </section>
+    </module>
+  </readout>
+  <groups>
+    <group name="HighZ">
+      <detector id="100" />
+    </group>
+    <group name="CdTe">
+      <detector id="100" />
+    </group>
+  </groups>
+</configuration>

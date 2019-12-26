@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/Users/takeda/soft/ComptonSoft/xmlstyle/badchannels_v1.xsl"?>
+<badchannels>
+  <name>CdTeStrip</name>
+  <comment>2016-4-22 | Shinichiro Takeda</comment>
+  <data>
+    <readout_module id="0">
+      <section id="0">
+        <channel id="0" status="1"/>
+      </section>
+      <section id="1">
+      </section>
+      <section id="2">
+      </section>
+      <section id="3">
+	<channel id="31" status="1"/>
+      </section>
+      <section id="4">
+	<channel id="31" status="1"/>
+      </section>
+      <section id="5">
+      </section>
+      <section id="6">
+      </section>
+      <section id="7">
+	<channel id="0" status="1"/>
+      </section>
+    </readout_module>
+  </data>
+</badchannels>
